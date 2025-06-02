@@ -26,6 +26,15 @@ export type Invoice = {
   status: 'pending' | 'paid';
 };
 
+// Define a string literal type
+export type InvoiceStatus = 'paid' | 'status';
+
+// Export constant value to use
+export const InvoiceStatuses = {
+  Paid: 'paid' as InvoiceStatus,
+  Pending: 'pending' as InvoiceStatus
+}
+
 export type Revenue = {
   month: string;
   revenue: number;
